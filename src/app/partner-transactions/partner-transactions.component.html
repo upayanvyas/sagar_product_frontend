@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <h3 class="text-center mb-5">Partner Transaction Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        <!-- <th>Action</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <!-- <td><i class="fas fa-info-circle" (click)="openPartnerTransactions()"></i></td> -->
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <!-- <td><i class="fas fa-info-circle"></i></td> -->
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <!-- <td><i class="fas fa-info-circle"></i></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12">
+            <div class="float-end">
+                <select name="" id="" (change)="makeACopy()">
+                    <option value="undefined" selected disabled hidden>Select Method</option>
+                    <option value="0">Print</option>
+                    <option value="1">Soft Copy</option>
+                    <option value="2">Both</option>
+                </select>
+                <button class="btn btn-secondary ms-3" (click)="makeACopy()">Make A Copy</button>
+            </div>
+
+        </div>
+    </div>
+</div>

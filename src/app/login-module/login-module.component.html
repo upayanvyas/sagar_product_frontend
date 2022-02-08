@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mx-auto">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-10 mx-auto my-4">
+                            <div class="card-content">
+                                <form (submit)="login(usercreds)">
+                                    <h5 class="text-center mb-4">Login Here</h5>
+                                    <div class="row form-group">
+                                        <input type="text" class="form-control mb-3" placeholder="Enter email" name="email" [(ngModel)]="usercreds.email">
+                                        <input type="password" class="form-control mb-3" placeholder="Enter password" name="password" [(ngModel)]="usercreds.password">
+                                        <!-- <i class="fas fa-eye float-right"></i><i class="fas fa-eye-slash float-end"></i> -->
+                                        <input type="submit" value="Login" class="btn  btn-primary mb-4">
+                                    </div>
+                                    <input type="checkbox" class="remember_checkbox" name="remember">
+                                    Remember Me
+                                    <span> <a class="float-end" href="/forgot-password">Forgot Password</a>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
